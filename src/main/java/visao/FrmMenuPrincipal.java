@@ -35,9 +35,16 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jMenuBar1.setToolTipText("");
+
         jMenuArquivo.setText("Arquivo");
 
         jMenuItemNovoAluno.setText("Cadastrar Alunos");
+        jMenuItemNovoAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemNovoAlunoActionPerformed(evt);
+            }
+        });
         jMenuArquivo.add(jMenuItemNovoAluno);
 
         jMenuItemGerenciarAlunos.setText("Gerenciar Alunos");
@@ -66,6 +73,13 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItemNovoAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNovoAlunoActionPerformed
+     
+        FrmCadastroAluno objeto = new FrmCadastroAluno();
+        objeto.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemNovoAlunoActionPerformed
 
     /**
      * @param args the command line arguments

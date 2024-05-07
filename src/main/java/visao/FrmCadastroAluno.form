@@ -24,19 +24,26 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField3" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField4" pref="342" max="32767" attributes="0"/>
+                  <Component id="JTFnome" alignment="0" pref="342" max="32767" attributes="0"/>
+                  <Component id="JTFCurso" alignment="0" max="32767" attributes="0"/>
+                  <Component id="JTFFase" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="JTFIdade" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="44" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <Component id="JBCancelar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="133" max="32767" attributes="0"/>
+              <Component id="JBCadastrar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -46,20 +53,25 @@
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+              <Component id="JTFnome" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jTextField2" min="-2" max="-2" attributes="0"/>
+              <Component id="JTFIdade" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
+              <Component id="JTFCurso" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jTextField4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="59" max="32767" attributes="0"/>
+              <Component id="JTFFase" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="JBCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JBCadastrar" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,16 +97,26 @@
         <Property name="text" type="java.lang.String" value="Fase:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="JTFnome">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTFCadastrarAluno"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="JTFIdade">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="JTFCurso">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="JTFFase">
+    </Component>
+    <Component class="javax.swing.JButton" name="JBCancelar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="JBCadastrar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cadastrar"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
